@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUINUASOL | Productos y Compra</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="logo">QUINUASOL ☀️</h1>
+            <nav class="main-nav">
+                <a href="index.html">HOME</a>
+                <a href="estrategia.html">PLAN ESTRATÉGICO</a>
+                <a href="index.html#equipo">EQUIPO & ORGANIGRAMA</a>
+                <a href="index.html#contacto">CONTÁCTANOS</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="section light-bg">
+        <div class="container">
+            <h3 class="section-title">NUESTROS PRODUCTOS Y COMPRA MAYORISTA</h3>
+            
+            <div class="product-grid">
+                <div class="product-card" data-nombre="Galleta Cacao" data-precio="55.00">
+                    <img src="https://images.unsplash.com/photo-1563855524855-8d57d54032d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHxhbWFuYWRhcyB5IHdpbnRlcnwxNzA0NDQzNzI2fA&lib=rb-4.0.3&q=80&w=280" alt="Galleta Cacao" class="product-image">
+                    <h4>Cacao Orgánico</h4>
+                    <p>Quinua y cacao de la selva. Caja de 24 unidades.</p>
+                    <span class="price">S/ 55.00</span>
+                    <button class="button buy-button" onclick="simularCompra(this)">COMPRAR AHORA</button>
+                </div>
+                <div class="product-card" data-nombre="Galleta Clásica" data-precio="45.00">
+                    <img src="https://images.unsplash.com/photo-1579717757394-c9569733475d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHxjcmFja2Vyc3x8fHx8fDE3MDM1Nzc5OTd8&lib=rb-4.0.3&q=80&w=280" alt="Galleta Clásica" class="product-image">
+                    <h4>Clásica (Vainilla)</h4>
+                    <p>Sabor original, ligero y suave. La más vendida.</p>
+                    <span class="price">S/ 45.00</span>
+                    <button class="button buy-button" onclick="simularCompra(this)">COMPRAR AHORA</button>
+                </div>
+                <div class="product-card" data-nombre="Galleta Coco" data-precio="60.00">
+                    <img src="https://images.unsplash.com/photo-1573063858055-a0c5c4e97669?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fGNvb2tpZXN8fHxlbnwxNzA0NDUwOTYwfA&lib=rb-4.0.3&q=80&w=280" alt="Galleta Coco" class="product-image">
+                    <h4>Exótica (Coco)</h4>
+                    <p>Quinua y hojuelas de coco. Sabor fresco y tropical.</p>
+                    <span class="price">S/ 60.00</span>
+                    <button class="button buy-button" onclick="simularCompra(this)">COMPRAR AHORA</button>
+                </div>
+                <div class="product-card" data-nombre="Galleta Naranja" data-precio="50.00">
+                    <img src="https://images.unsplash.com/photo-1590005553319-3540c1d68378?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fGNyYWNrZXJzfHxlbnwxNzA0NDUwOTYxfA&lib=rb-4.0.3&q=80&w=280" alt="Galleta Naranja" class="product-image">
+                    <h4>Energía (Naranja)</h4>
+                    <p>Toque cítrico natural. Alto valor vitamínico.</p>
+                    <span class="price">S/ 50.00</span>
+                    <button class="button buy-button" onclick="simularCompra(this)">COMPRAR AHORA</button>
+                </div>
+                <div class="product-card subscription-card" data-nombre="Suscripción Inversor" data-precio="2400.00">
+                    <img src="https://images.unsplash.com/photo-1542203774-c36b6f002b85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHxwYWNrYWdlfHdlbnwxNzA0NDQzNzI3fA&lib=rb-4.0.3&q=80&w=280" alt="Paquete Suscripción" class="product-image">
+                    <h4>Suscripción Anual</h4>
+                    <p>Acceso anticipado y soporte premium. Ideal para Inversores.</p>
+                    <span class="price">S/ 2,400.00</span>
+                    <button class="button buy-button" onclick="simularCompra(this)">COMPRAR AHORA</button>
+                </div>
+            </div>
+
+            <div class="business-info-grid">
+                <div class="info-box stock-box">
+                    <h4>📦 Estado de Stock y Distribución</h4>
+                    <p>Operamos con un **Stock Rotativo (Just-in-Time)**. Producimos bajo pedido de mayoristas para minimizar costos operativos. **Stock Actual:** 1,500 cajas (bajo pedido confirmado).</p>
+                </div>
+                <div class="info-box payment-box">
+                    <h4>💳 Métodos de Compra y Pago</h4>
+                    <p>Compra fácil y segura. **Aceptamos:** Transferencia Bancaria (BCP y BBVA), Yape/Plin (anticipos) y Tarjetas Visa/Mastercard (Pasarela segura).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h4>📍 Ubicación de la Sede</h4>
+            <img src="https://images.unsplash.com/photo-1601004318043-432a19777c57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHxtYXAgZmljdGlvbnw1Njh8fHxlbnwxNzA0NDQ1MzU1&lib=rb-4.0.3&q=80&w=600" alt="Mapa de la oficina" class="map-image">
+            <p class="small-text">
+                © 2025 QUINUASOL. <a href="index.html">Home</a> | <a href="productos.html">Productos</a> | <a href="estrategia.html">Estrategia</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // CÓDIGO JAVASCRIPT: Simulación de Compra
+        function simularCompra(buttonElement) {
+            const card = buttonElement.closest('.product-card');
+            const nombre = card.getAttribute('data-nombre');
+            const precio = card.getAttribute('data-precio');
+
+            // Usamos alert() para simular la acción y mostrar datos de negocio
+            alert(`🎉 ¡Compra Simulada Exitosa! 🎉\n\nProducto: ${nombre}\nPrecio Mayorista: S/ ${precio}\n\n✅ Redirigiendo a Pasarela de Pago Ficticia...\n\n(Demostración de Funcionalidad JS del CTO)`);
+            
+            // Opcional: Deshabilitar el botón temporalmente
+            buttonElement.disabled = true;
+            buttonElement.textContent = '¡AGREGADO!';
+        }
+    </script>
+
+</body>
+</html>

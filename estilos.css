@@ -1,0 +1,454 @@
+/* PALETA DE COLORES ANÁLOGA CÁLIDA:
+   --primary-color: #FF5733; (Naranja rojizo, fuerte)
+   --secondary-color: #FFC300; (Amarillo brillante/Acción)
+   --neutral-dark: #333; (Gris Oscuro)
+   --background-light: #FFF8E6; (Beige muy claro, casi blanco)
+   --accent-color: #A03A26; (Rojo ladrillo para detalles)
+*/
+
+:root {
+    --primary-color: #FF5733; 
+    --secondary-color: #FFC300; 
+    --neutral-dark: #333;
+    --background-light: #FFF8E6;
+    --accent-color: #A03A26;
+    --text-light: #FFF;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--neutral-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Encabezado y Navegación (Header) --- */
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 0;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.header .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+/* --- Sección Hero (Principal) --- */
+.hero {
+    background: linear-gradient(to right, var(--primary-color), #ff7e5f);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.hero-product-image {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 5px solid var(--secondary-color);
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: var(--secondary-color);
+}
+
+.button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FFEA61;
+    transform: translateY(-2px);
+}
+
+/* --- Secciones Generales --- */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.light-bg {
+    background-color: var(--background-light);
+}
+
+.blue-bg {
+    background-color: var(--accent-color); 
+    color: white;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.white-text {
+    color: white;
+}
+.section-title.white-text {
+    color: white;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* --- Misión, Visión, Plan (Strategy Grid) --- */
+.strategy-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.strategy-card {
+    background-color: white;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    width: 30%;
+    min-width: 250px;
+}
+.strategy-card h4 {
+    color: var(--accent-color);
+    margin-top: 0;
+}
+.strategy-card ul {
+    list-style-type: '✅';
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+
+/* Estilo para la nueva caja de estrategia detallada */
+.strategy-detail-grid {
+    margin-bottom: 40px;
+}
+.strategy-callout {
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 25px;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #FFECE6;
+    text-align: left;
+}
+.strategy-callout h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+
+/* --- Rejilla de Productos (Stock y Pago) --- */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 200px; /* Reducido para que quepan 5 */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 3px solid var(--secondary-color);
+}
+
+.product-card h4 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    display: block;
+    margin-top: 10px;
+}
+.buy-button {
+    font-size: 0.85em;
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+
+/* DETALLE DE STOCK Y PAGO */
+.business-info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    width: 45%;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stock-box {
+    background-color: #E6F0FF; /* Fondo claro para stock */
+}
+.stock-box h4 {
+    color: #0056B3;
+}
+
+.payment-box {
+    background-color: #D4EDDA; /* Fondo verde claro para pago */
+}
+.payment-box h4 {
+    color: #155724;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+/* --- ORGANIGRAMA Y EQUIPO --- */
+.team-organigram {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-level {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.level-1 {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.level-1::after { 
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 30px;
+    background-color: var(--primary-color);
+}
+
+.team-member {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.level-2 {
+    border-top: 2px solid var(--primary-color);
+    padding-top: 30px;
+}
+
+.team-member h4 {
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.team-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* --- Contacto y Redes Sociales --- */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact-info, .contact-form-container {
+    width: 45%;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.submit-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--neutral-dark);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 5px solid var(--secondary-color);
+}
+
+.map-image {
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Media Queries (Responsividad) --- */
+@media (max-width: 768px) {
+    .hero-content, .strategy-grid, .business-info-grid, .contact-grid {
+        flex-direction: column;
+    }
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-product-image {
+        max-width: 60%;
+    }
+    .strategy-card, .info-box, .contact-info, .contact-form-container {
+        width: 100%;
+    }
+    .team-level {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .level-2 {
+        border-top: none;
+        padding-top: 0;
+    }
+    .level-1::after {
+        display: none;
+    }
+}
